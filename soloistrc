@@ -54,6 +54,9 @@ node_attributes:
         -
           name: sprout-wrap
           url: https://github.com/pivotal-sprout/sprout-wrap.git
+        -
+          name: periscope
+          url: https://github.com/PeriscopeData/clocktower.git
     terminal:
       default_profile: 'Pro'
     settings:
@@ -97,3 +100,4 @@ node_attributes:
       - virtualbox
       - xquartz
       - xscope
+
