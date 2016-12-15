@@ -15,6 +15,13 @@ SITE
       chef_handler (>= 0.0.0)
 
 GIT
+  remote: https://github.com/ClayShentrup/periscope-recipes
+  ref: master
+  sha: 56056c48ae27ab5b43226ee789bbb0bec0ffe31d
+  specs:
+    periscope (0.1.0)
+
+GIT
   remote: https://github.com/pivotal-sprout/osx
   ref: master
   sha: 57820f0c0f4b08e9cff82a57a7489f9dcc9345f7
@@ -134,6 +141,7 @@ DEPENDENCIES
   build-essential (= 3.2.0)
   mingw (= 0.1.1)
   osx (>= 0)
+  periscope (>= 0)
   sprout-base (>= 0)
   sprout-chruby (>= 0)
   sprout-git (>= 0)
