@@ -26,8 +26,10 @@ recipes:
 - sprout-git::git_scripts
 
 # development (rails)
-- sprout-rbenv
-- sprout-ruby
+- sprout-chruby
+- sprout-chruby::chruby
+- sprout-chruby::default_ruby
+- sprout-chruby::rubies
 - sprout-mysql
 - sprout-postgresql
 
@@ -37,20 +39,17 @@ recipes:
 
 node_attributes:
   sprout:
+    chruby:
+      rubies:
+        ruby:
+          - 2.2.2
+          - 2.3.3
     git:
       domain: pivotal.io
       authors:
         - initials: ah
           name: Abhijit Hiremagalur
           username: abhi
-        - initials: bc
-          name: Brian Cunnie
-          username: cunnie
-        - initials: jrhb
-          name: Jonathan Barnes
-        - initials: lw
-          name: Luke Winikates
-          username: lwinikates
       projects:
         -
           name: sprout-wrap
