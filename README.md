@@ -12,7 +12,17 @@ To provision your machine, open up Terminal and enter the following:
 
 ```sh
 sudo xcodebuild -license
+```
+
+Type `q` then type `agree` and press `enter`.
+
+```sh
 xcode-select --install
+```
+
+Click `Install`.
+
+```sh
 git clone https://github.com/ClayShentrup/sprout-wrap.git
 cd sprout-wrap
 caffeinate ./sprout
