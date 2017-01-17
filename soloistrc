@@ -11,6 +11,7 @@ recipes:
 # apps
 - sprout-osx-apps::iterm2
 - sprout-osx-apps::shiftit
+- sprout-osx-settings::remove_garageband
 
 # settings
 - sprout-osx-settings
@@ -27,33 +28,25 @@ recipes:
 
 # development (rails)
 - sprout-chruby
-- sprout-chruby::chruby
-- sprout-chruby::default_ruby
-- sprout-chruby::rubies
-- sprout-mysql
+- sprout-ruby
 - sprout-postgresql
 
 # apps (editors)
-- sprout-osx-apps::textmate_preferences
+- sprout-osx-apps::sublime_text
 - sprout-jetbrains-editors::rubymine
 
 node_attributes:
   sprout:
     chruby:
+      default_ruby: 2.2.2
       rubies:
-        ruby:
-          - 2.2.2
-          - 2.3.3
+        - 2.2.2
     git:
       domain: pivotal.io
-      authors:
-        - initials: ah
-          name: Abhijit Hiremagalur
-          username: abhi
       projects:
         -
           name: sprout-wrap
-          url: https://github.com/pivotal-sprout/sprout-wrap.git
+          url: https://github.com/ClayShentrup/sprout-wrap.git
         -
           name: periscope
           url: https://github.com/PeriscopeData/clocktower.git
@@ -75,29 +68,23 @@ node_attributes:
         head: true
       - ag
       - chromedriver
-      - imagemagick
       - node
       - pstree
       - qt
+      - sourcetree
+      - skitch
       - ssh-copy-id
+      - sublime-text3
       - tmux
       - tree
       - watch
       - wget
-      - rbenv-binstubs
     casks:
       - firefox
       - flycut
       - rowanj-gitx
-      - github-desktop
       - google-chrome
       - google-drive
       - google-hangouts
-      - macvim
-      - skype
-      - textmate
-      - vagrant
-      - virtualbox
       - xquartz
       - xscope
-
